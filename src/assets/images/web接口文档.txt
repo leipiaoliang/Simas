@@ -1,0 +1,389 @@
+Web接口
+
+
+本地:localhost:8080/wesupromo/
+测试:https://dev-wesurance814.com/wesupromo/
+
+预注册
+web/addClicks
+参数:
+{
+    "trx_id" : "963",
+    "merchant_id" : "00002",
+    "product_id" : "5d15cda9971f320d262b810a"
+}
+
+
+//进入api文档
+web/buy/insurer/product
+参数:
+{
+"merchant_id":"123456",
+"product_id":"5d26d2b0971f320d26f98fee",
+"language":"tc"
+}
+
+//存储点击量
+web/addClicks
+参数:
+{
+    "trx_id" : "963",
+    "merchant_id" : "00002",
+    "product_id" : "5d15cda9971f320d262b810a"
+}
+
+//获取到购买成功的数据
+web/getBuysuccefulP
+参数:
+{
+    "merchant_id": "GOLIONHK",
+    "start_date": "2019-08-30",
+    "end_date": "2019-10-22",
+    "product_id": "5d71c93a47e5a01196f6b352" 
+}
+//购买所有保单的清单
+web/trxList
+参数:
+{
+    "merchant_id": "GOLIONHK",
+    "start_date": "2019-08-30",
+    "end_date": "2019-10-22",
+    "product_id": "5d71c93a47e5a01196f6b352"  
+}
+//返回保险保障书
+web/guaranteeBook
+参数
+{
+    "trx_id": "GOLIONHKF99E4A06"
+
+}
+//产品详情
+web/tpc/getProductDetails
+参数
+{
+      "language": "tc",
+      "product_id": "5d26d2b0971f320d26f98fee",
+      "merchant_id": "GOLIONHK"
+    }
+
+	
+	
+	++++++++++++++++++++++++++++++++++++   Simas +++++++++++++++++++++++++++
+	
+//返回对应产品的提问问题
+web/indonesia/getQuestionContent
+参数:
+{
+	"id":"5d07641a9a8cc91550df7c7d",
+	"title" : "Ms.",
+	"product_id" : "5d71c93a47e5a01196f6b352",
+	"language" : "idn"
+}
+//问题提交处理
+web/indonesia/questionSubmit
+{
+ "question_answers" : [
+  {
+   "question_id":"5d75f25547e5a011962915dc",
+   "question_type":"YES",
+   "question_number" : 1,
+   "pass_answer":"No"
+  },
+  {
+   "question_id":"5d75f27a47e5a011962917d8",
+   "question_type":"YES",
+   "question_number" : 2,
+   "pass_answer":"No"
+  },
+  {
+   "question_id":"5d75f2a847e5a01196291a15",
+   "question_type":"YES",
+   "question_number" : 3,
+   "pass_answer":"Yes"
+  },
+  {
+   "question_id":"5d76008447e5a0119629dbfd",
+   "question_type":"FREETEXT",
+   "question_number" : 4,
+   "pass_answer":"170"
+  },
+  {
+   "question_id":"5d7600aa47e5a0119629de55",
+   "question_type":"FREETEXT",
+   "question_number" : 5,
+   "pass_answer":"50"
+  }
+ ]
+}
+
+//simas 产品报价
+web/product/getMedicalInsuranceProductQuote
+参数：
+{
+    "product_id": "5d70aec247e5a01196e929b3",
+    "language": "tc",
+    "company_plan_id": "4",
+    "others_insured_list": [
+        {
+            "dob": "1990-01-19"
+        }
+    ]
+}
+//simas 购买
+web/checkout/wvp4Starr1
+参数:
+{
+    
+    "company_plan_id": "1",
+    "address": "Jl Lombok No 74",
+    "province": "SUMATERA UTARA",
+    "city": "KOTA PADANGSIDIMPUAN",
+    "postalCode": "10645",
+    "questionerAnswer": [
+         {
+            "questionerNumber": 1,
+            "questionerAnswer": "No"
+        },
+        {
+            "questionerNumber": 2,
+            "questionerAnswer": "Yes"
+        },
+        {
+            "questionerNumber": 3,
+            "questionerAnswer": "No"
+        },
+        {
+            "questionerNumber": 4,
+            "questionerAnswer": "Yes"
+        }
+    ],
+    
+    "application_id": "6d239064ae3344149b9cab75",
+    "web_policy_holder":{
+     "doc_firstname": "Ming",
+            "doc_surname": "Cat",
+            "doc_type": "idcard",
+            "doc_id": "c668668",
+            "dob": "1996-05-20",
+            "relation": 2001,
+            "title": "Mr."
+    },
+    "others_insured_list": [
+        
+        {
+            "doc_firstname": "bodlS4IKJSfREy6y2tvP8AaENpSlEMm9B+x2+XsM/smI9e57VRfSXYMu9wEwWLYL1AJS6GU9cW3xi3ZJRUU6c7BkuLS+RNu497ZCldE5dl0MNIMPxkzA/qQQI//Zwe4AG/mgU9NfBeBxPgc5jd09DwqWr2knW8B1gLhPm+H/FCw=",
+            "doc_surname": "ckvVZBapR+4GI4wVfrAaMhZjdZqVXYGBXCpeGUztGvU7z4fOfRP6Er7oXItQXG7qa7RlR5xF0Kzcj/NFsw3nuFlQJaSLeu1llxDyyyxO96ONvAgG4jq+HGOpkdTNJTqlvao/b41gf+m2otFZWd1y0rzUa7uwsHBWudFd1YJz08E=",
+            "doc_type": "passport",
+            "doc_id": "ltykmrqiLVyGIl/DOw1xJk49ARZK91h+iNOh6LLhbh2QJxh6XtoVqeXLrpc+ZEIJ572Yg3u19Lk3G5UAnOO38tP6FavfrdB15f56ambdMLlH6qyCYbOF67Kqq8Xqs+LvOjTHJMBppWkEzUh1IO626177I11XDAvsTzguloIoQ7E=",
+            "dob": "1980-05-20",
+            "relation": 2003,
+            "title": "Mr."
+        }
+    ],
+    "id": "5dad88d69a8cc9208a48ba51",
+    "trx_id":"123456",
+    "payment_type": 12,
+    "product_id": "5d71c93a47e5a01196f6b352",
+    "start_date": "2019-10-14",
+    "end_date":"2019-10-21",
+    "operation":"travel"
+}
+
+// simas 网页支付跳转界面
+//web/webview/MedicalInsurancePayForm (get)
+参数:
+
+id:5dad88d69a8cc9208a48ba51
+application_id:97A8EF3DE9D75737
+
+simas 回调接口
+spc/wvSimasCallBack
+参数:
+{
+Map<String,String>map;
+}
+
+++++++++++++++++++++++++++++++++++++   STARR   +++++++++++++++++++++++++++
+
+区号
+web/sys/getCountryCode  (post)
+不用任何参数
+
+产品报价
+web/product/getstarrquote 
+参数:
+{
+  
+  "product_id":"5d15cda9971f320d262b810a",
+  "language":"eng",
+  "start_date":"2019-10-22",
+  "end_date":"2020-10-21",
+  "others_insured_list":[
+  	{
+  		"relation":2001
+  		
+  	},
+  	{
+  		"relation":2003
+ 
+  	}
+  	]
+}
+//重要事项
+web/tpc/getImportantNotes
+参数:
+ {
+	"product_id":"5b1e3d3a24a7ce5d6eb334df",
+	"language" : "sc"
+}
+//返回产品的所有保障 
+web/tpc/getProductTerms
+参数:
+{
+	"product_id":"5b1e3d3a24a7ce5d6eb334df",
+	"language" : "sc"
+}
+
+//购买产品
+web/checkout/purchasebystarr
+参数:
+{
+    "application_id": "6d239064ae3344149b9cab6e04ec6898",
+    
+    
+    "web_policy_holder":{
+    	"doc_firstname": "Ming",
+            "doc_surname": "Cat",
+            "doc_type": "idcard",
+            "doc_id": "c668668",
+            "dob": "1996-05-20",
+            "relation": 2001,
+            "title": "Mr."
+    },
+    "others_insured_list": [
+        {
+            "doc_firstname": "Ming",
+            "doc_surname": "Cat",
+            "doc_type": "idcard",
+            "doc_id": "c668668",
+            "dob": "1996-05-20",
+            "relation": 2001,
+            "title": "Mr."
+        
+            
+        }
+    ],
+    "ccinfo": {
+        "card_no": "5422882800700007",
+        "expired_month": "07",
+        "expired_year": "20",
+        "card_holder_name": "testing card",
+        "card_scheme": "Master",
+        "cvc": "123"
+    },
+    "id": "5dafc21b9a8cc93202da75d8",
+    "payment_type": 12,
+    "product_id": "5d15cda9971f320d262b810a",
+    "start_date": "2019-10-23",
+    "end_date":"2019-10-28",
+    "operation":"travel",
+    "trx_id":"123555",
+    "merchant_id":"000001"
+}
+
+//购买页面
+web/webview/starrPayForm (post)
+参数:
+没有参数
+
+ // starr产品回调
+web/spc/wvCallBack
+参数：
+{
+Map<String,String>map
+}
+
+//檢查出發日期是否在有效期内
+web/validate/checkJourneyDate
+参数：
+{
+  
+  "product_id":"5b751d8151812ce27ce2856a",  
+   "language":"eng",
+  "start_date":"2019-02-03",
+  "end_date":"2019-08-31"
+}
+
+// 检查身份证id
+web/validate/validateHKIDWithLng
+参数:
+{
+	"language":"tc",
+	"HKID":"123456"
+}
+
+//获取 webstarr pdf(保障书)
+web/inputest/{awi_policy_no}
+参数:
+{
+  无参数
+}
+
+
+
+++++++++++++++++++家佣保险+++++++++++++++++++++++
+//报价
+/wesupromo/web/product/getquote
+参数:
+	{
+		"id":"5dad88d69a8cc9208a48ba51",   
+		"operation":"pa_4_domestic_helper",  //个人意外
+		"product_id":"5c341628b4e3dc9ea3a42281",
+		"adults_no":"1",
+		"child_no":"0",
+		"start_date":"2019-10-30"
+	}
+	
+	
+		{
+		"id":"5dad88d69a8cc9208a48ba51",
+		"operation":"study_abroad", //留学保险
+		"product_id":"5b84aadad535719068fe99c1",
+		"adults_no":"1",
+		"child_no":"0",
+		"start_date":"2019-10-30",
+		"period_value":"1"  //一年或者两年 
+		
+	}
+	
+		{
+		"id":"5dad88d69a8cc9208a48ba51",
+		"operation":"domestic_helper",  //woo
+		"product_id":"5ba067dc5fbab3fd0901d400",
+		"adults_no":"1",
+		"child_no":"0",
+		"start_date":"2019-10-30",
+		"period_value":"2"
+		
+	}
+	
+	//返回地区城市
+	web/dictionary/getHkAddress
+	参数:
+	{
+	"territory_id":"59cb12c757ae6a797e10a15b"
+    }
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
